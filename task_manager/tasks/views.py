@@ -47,5 +47,3 @@ class TaskDeleteView(View):
         task = get_object_or_404(Task, pk=pk)
         task.delete()
         return redirect('task_list')
-    
-# done
